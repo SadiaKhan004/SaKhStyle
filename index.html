@@ -467,99 +467,119 @@
         }
 
         @media screen and (max-width: 760px) {
-    .navigation {
-        width: 100%;
-    }
+      /* Navigation adjustments */
+      .navigation {
+        justify-content: space-between; /* Center elements horizontally */
+        width: 260vw;
+      }
 
-    .navigation ul {
+      .navigation ul {
         padding: 0;
-        margin: 0;
-        text-align: center;
-    }
+        margin-left: 50vw;
+        display: flex; /* Arrange elements horizontally */
+        flex-direction: row; /* Align elements from left to right */
+        align-items: center; /* Align elements vertically in the center */
+      }
 
-    .navigation ul li {
+      .navigation ul li {
         list-style: none;
-        display: inline-block;
-        padding-left: 5px;
-        padding-right: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
         padding-top: 12px;
-    }
+      }
 
-    .navigation ul li a {
-        font-size: 4vw; 
-        /* Adjust font size based on viewport width */
-    }
+      .navigation ul li a {
+        font-size: 8vw; /* Adjust font size based on viewport width */
+      }
 
-    .navigation input {
-        width: 100%;
-        font-size: 2.5vw; 
-        margin-right: -20px;
-        /* Adjust font size based on viewport width */
-    }
+      .navigation input {
+        width: 80%; /* Adjust input width */
+        font-size: 3vw; /* Adjust font size based on viewport width */
+        margin-right: 20vw;
+        margin-left: 10vw;
+      }
 
-    .navigation a img {
+      .navigation a img {
         width: 5.5vw; /* Adjust image size based on viewport width */
-        top: 2%;
-        left: 80%;
-    }
+        top: 3%;
+        left: 170vw;
+      }
 
-    .navigation ul li p {
+      .navigation ul li p {
         font-size: 2.5vw; /* Adjust font size based on viewport width */
-        left: 30%;
-        top: 6%;
+        left: unset; /* Remove left positioning */
+         /* Add margin for spacing */
         font-size: 14px;
         font-weight: bolder;
+        top: 7%;
+        left: 50vw;
+      }
+      #sakh img{
+        left: 34vw;
+      }
 
-    }
-
-    #userprofile img {
-        width: 7vw; /* Adjust image size based on viewport width */
-        left: 120%;
+      #userprofile img {
+        width: 10vw; /* Adjust image size based on viewport width */
+        left: 238vw; /* Adjust left position */
         top: 2%;
-    }
+      }
 
-    .main-page {
+
+      /* Main content adjustments */
+      .main-page {
         width: 100%;
-        height: 1200px;
-    }
+        height: auto; /* Remove fixed height */
+      }
 
-    .main-page li {
+      .main-page li {
         display: block;
         margin-bottom: 10px;
-    }
+      }
+
 
 
     #one {
         position: absolute;
         text-align: center;
-        width: 100%;
+        left: 50%;
+        width: 2vw;
     }
+    #one img{
+        width: 140vw;
+        height: 150vw;
+    }
+    
     #two{
         position: absolute;
-        text-align: center;
-        top: 80%;
-        left: 15%;
-        width: 100%;
+        top: 120%;
+        left: 50%;
+    }
+    #two img{
+        width: 140vw;
+        height: 150vw;
     }
     #three {
         position: absolute;
-        text-align: center;
-        top: 130%;
-        left: 15%;
-        width: 100%;
+        top: 210%;
+        left: 50%;
+    }
+    #three img{
+        width: 140vw;
+        height: 150vw;
+  
     }
 
     .circle1 {
-        width: 70px;
-        height: 200px;
-        top: 200%;
+        width: 100px;
+        height: 240px;
+        top: 300%;
         
        
     }
     .circle2 {
         height: 200px;
         left: -21%;
-        top: 260%;
+        top: 370%;
         border-top-right-radius: 160px 230px;
             border-bottom-right-radius: 160px 230px;
 
@@ -569,110 +589,113 @@
     .circle3{
         width: 70px;
         height: 200px;
+        top: 440%;
         
        
     }
 
     .mens-fashion2 , .womens-fashion2 , .kids-fashion2  {
-        width: 90%;
+        width: 80%;
         height: auto;
         margin: auto;
         display: block;
         border-radius: 25px;
     }
     .mens-fashion2 img{
-        top: 205%;
-        left: 90%;
+        top: 300%;
+        left: 150%;
     }
     .mens-fashion #heading1{
         position: absolute;
-        top: 200%;
-        font-size: 30px;
+        top: 300%;
+        font-size: 34px;
         left: 12%;
     }
     .mens-fashion #heading2{
         position: absolute;
-        top: 204%;
-        font-size: 28px;
+        top: 306%;
+        font-size: 32px;
         left: 18%;
     }
     .mens-fashion #heading3{
         position: absolute;
-        top: 210%;
-        font-size: 14px;
+        top: 315%;
+        font-size: 16px;
         left: 12%;
-        width: 240px;
+        width: 360px;
     }
     .womens-fashion img{
-        top: 260%;
-        left: 90%;
+        top: 370%;
+        left: 150%;
     }
     .womens-fashion #heading4{
         position: absolute;
-        top: 260%;
+        top: 370%;
         font-size: 30px;
         left: 12%;
     }
     .womens-fashion #heading5{
         position: absolute;
-        top: 264%;
+        top: 375%;
         font-size: 28px;
         left: 18%;
         width: 240%;
     }
     .womens-fashion #heading6{
         position: absolute;
-        top: 270%;
+        top: 382%;
         font-size: 14px;
         left: 12%;
-        width: 240px;
+        width: 360px;
     }
     .kids-fashion2 img{
-        width: 40%;
-        top: 324%;
-        left: 90%
+        top: 450%;
+        left: 150%
     }
 
     .kids-fashion #heading7{
         position: absolute;
-        top: 320%;
+        top: 440%;
         font-size: 30px;
         left: 12%;
     }
     .kids-fashion #heading8{
         position: absolute;
-        top: 324%;
+        top: 445%;
         font-size: 28px;
         left: 18%;
         width: 240%;
     }
     .kids-fashion #heading9{
         position: absolute;
-        top: 330%;
+        top: 453%;
         font-size: 14px;
         left: 12%;
-        width: 240px;
+        width: 360px;
     }
     
     .community {
             width: 90%;
             text-align: center;
-            top: 370%;
-            left: 20%;
+            top: 525%;
+            left: 50%;
         }
 
         .community p {
-            font-size: 15px;
+            font-size: 24px;
             color: rgb(107, 105, 105);
-        }
+            width: 550px;}
+        
         .bx{
-            font-size: 50px;
+            font-size: 80px;
             margin-right: -10px;
+            margin-left: 15px;
         }
 
         .social {
-            top: 385%;
+            top: 550%;
             width: 300px;
+            left: 90%;
         }
 }
 
