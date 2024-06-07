@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            border: none;
+            background-color: #FCF4FC;
+        }
+
+        .navigation {
+            width: 1280px;
+            background-color: #CDEEE6;
+            height: 100px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+        .navigation ul {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .navigation ul li {
+            list-style: none;
+            display: inline-block;
+            padding-left: 65px;
+            padding-right: 10px;
+            padding-top: 25px;
+        }
+
+        .navigation ul li a {
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 26px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .navigation input {
+            width: 200px;
+            height: 25px;
+            border-radius: 3px;
+            background-color: #F5EBF6;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        .navigation a img {
+            width: 25px;
+            position: absolute;
+            top: 5%;
+            left: 62%;
+        }
+
+        .navigation ul li p {
+            position: absolute;
+            left: 15%;
+            transform: rotate(-90deg);
+            transform-origin: 1px 10px;
+        }
+
+        #userprofile {
+            display: inline-block;
+        }
+
+        #userprofile img {
+            position: absolute;
+            left: 90%;
+            top: 2.5%;
+            width: 45px;
+        }
+
+        #userprofile #userProfileName {
+            position: absolute;
+            left: 90%;
+            top: 12%;
+            transform: translateY(-20%);
+        }
+
+        #sakh img {
+            position: absolute;
+            left: 10%;
+            top: 2.5%;
+            width: 45px;
+
+
+        }
+
+        .main-page {
+            margin-top: 40px;
+            width: 1280px;
+            height: 450px;
+            background-color: #F5EBF6;
+            border-radius: 12px;
+        }
+
+        .main-page li {
+            list-style: none;
+            display: inline-block;
+
+        }
+
+        .main-page li img {
+            width: 250px;
+            height: 320px;
+            border-radius: 7px;
+        }
+
+        #one a:active img,
+        #two a:active img,
+        #three a:active img {
+            box-shadow: inset 8px 8px 12px 0px #CDEEE6,
+                inset -8px -8px 12px 0px #CDEEE6;
+            transform: scale(.9);
+            box-shadow: 15px 15px 15px #CDEEE6;
+            transition: all 0.5s ease;
+
+        }
+
+        #one {
+            position: absolute;
+            left: 15%;
+            top: 30%;
+
+        }
+
+        #two {
+            position: absolute;
+            left: 40%;
+            top: 35%;
+
+        }
+
+        #three {
+            position: absolute;
+            left: 65%;
+            top: 30%;
+
+        }
+
+        .circle1 {
+            position: absolute;
+            left: -2%;
+            top: 120%;
+            width: 150px;
+            height: 450px;
+            background-color: #CDEEE6;
+            transform: rotate(360deg);
+            border-top-right-radius: 160px 230px;
+            border-bottom-right-radius: 160px 230px;
+        }
+
+        .mens-fashion {
+            width: 1280px;
+        }
+
+        #heading1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 85px;
+            font-weight: bolder;
+            color: black;
+            position: absolute;
+            top: 125%;
+            left: 7%;
+            letter-spacing: 0.07em;
+        }
+
+        #heading2 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 65px;
+            font-weight: bolder;
+            color: black;
+            position: absolute;
+            top: 142%;
+            left: 11%;
+            letter-spacing: 0.07em;
+        }
+
+        #heading3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+            font-weight: lighter;
+            color: rgb(124, 120, 120);
+            position: absolute;
+            top: 162%;
+            left: 7%;
+            width: 290px;
+            text-align: justify;
+            letter-spacing: 0.07em;
+        }
+
+        .mens-fashion2 img {
+            width: 260px;
+            height: 310px;
+            position: absolute;
+            left: 35%;
+            top: 135%;
+            border-radius: 25px;
+        }
+
+        .mens-fashion2:active img {
+            box-shadow: inset 8px 8px 12px 0px #CDEEE6,
+                inset -8px -8px 12px 0px #CDEEE6;
+            transform: scale(.9);
+            box-shadow: 15px 15px 15px #CDEEE6;
+            transition: all 0.5s ease;
+
+
+        }
+
+        .circle2 {
+            position: absolute;
+            right: -2%;
+            top: 210%;
+            width: 150px;
+            height: 450px;
+            background-color: #CDEEE6;
+            transform: rotate(360deg);
+            border-top-left-radius: 160px 230px;
+            border-bottom-left-radius: 160px 230px;
+        }
+
+        #heading4 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 85px;
+            font-weight: bolder;
+            color: black;
+            position: absolute;
+            top: 220%;
+            right: 7%;
+            letter-spacing: 0.07em;
+        }
+
+        #heading5 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 65px;
+            font-weight: bolder;
+            color: black;
+            position: absolute;
+            top: 236%;
+            right: 5%;
+            letter-spacing: 0.07em;
+        }
+
+        #heading6 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+            font-weight: lighter;
+            color: rgb(124, 120, 120);
+            position: absolute;
+            top: 257%;
+            right: 8%;
+            width: 290px;
+            text-align: justify;
+            letter-spacing: 0.07em;
+        }
+
+        .womens-fashion2 img {
+            width: 260px;
+            height: 320px;
+            position: absolute;
+            left: 42%;
+            top: 232%;
+            border-radius: 25px;
+        }
+
+        .womens-fashion2:active img {
+            box-shadow: inset 8px 8px 12px 0px #CDEEE6,
+                inset -8px -8px 12px 0px #CDEEE6;
+            transform: scale(.9);
+            box-shadow: 15px 15px 15px #CDEEE6;
+            transition: all 0.5s ease;
+
+
+        }
+
+        .circle3 {
+            position: absolute;
+            left: -2%;
+            top: 320%;
+            width: 150px;
+            height: 450px;
+            background-color: #CDEEE6;
+            transform: rotate(360deg);
+            border-top-right-radius: 160px 230px;
+            border-bottom-right-radius: 160px 230px;
+        }
+
+
+        #heading7 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 85px;
+            font-weight: bolder;
+            color: black;
+            position: absolute;
+            top: 325%;
+            left: 7%;
+            letter-spacing: 0.07em;
+        }
+
+        #heading8 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 65px;
+            font-weight: bolder;
+            color: black;
+            position: absolute;
+            top: 342%;
+            left: 11%;
+            letter-spacing: 0.07em;
+        }
+
+        #heading9 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+            font-weight: lighter;
+            color: rgb(124, 120, 120);
+            position: absolute;
+            top: 362%;
+            left: 7%;
+            width: 290px;
+            text-align: justify;
+            letter-spacing: 0.07em;
+        }
+
+        .kids-fashion2 img {
+            width: 260px;
+            height: 310px;
+            position: absolute;
+            left: 35%;
+            top: 335%;
+            border-radius: 25px;
+        }
+
+        .kids-fashion2:active img {
+            box-shadow: inset 8px 8px 12px 0px #CDEEE6,
+                inset -8px -8px 12px 0px #CDEEE6;
+            transform: scale(.9);
+            box-shadow: 15px 15px 15px #CDEEE6;
+            transition: all 0.5s ease;
+
+
+        }
+
+        .community {
+            width: 1280px;
+            position: absolute;
+            top: 400%;
+            left: 30%;
+            width: 500px;
+            text-align: center;
+        }
+
+        .community p {
+            font-size: 20px;
+            color: rgb(107, 105, 105);
+        }
+
+        .social {
+            position: absolute;
+            top: 420%;
+            left: 40%;
+        }
+
+        .bx {
+            font-family: 'Boxicons';
+            font-weight: normal;
+            font-style: normal;
+            display: inline-block;
+            font-size: 60px;
+            color: black;
+            width: 90px;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-header,
+        .modal-body,
+        .modal-footer {
+            padding: 10px;
+        }
+
+        .modal-header {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .modal-footer {
+            border-top: 1px solid #e5e5e5;
+            text-align: right;
+        }
+
+        .modal-body {
+            padding: 2px 16px;
+        }
+
+        .login-form,
+        .signup-form {
+            display: none;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn,
+        .btn1 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover,
+        .btn1:hover {
+            background-color: #45a049;
+        }
+
+        @media screen and (max-width: 360px) {
+    .navigation {
+        width: 140%;
+    }
+
+    .navigation ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navigation ul li {
+        list-style: none;
+        display: inline-block;
+        padding-left: 5px;
+        padding-right: 3px;
+        padding-top: 12px;
+    }
+
+    .navigation ul li a {
+        font-size: 4vw; 
+        /* Adjust font size based on viewport width */
+    }
+
+    .navigation input {
+        width: 100%;
+        font-size: 2.5vw; 
+        margin-right: -20px;
+        /* Adjust font size based on viewport width */
+    }
+
+    .navigation a img {
+        width: 5.5vw; /* Adjust image size based on viewport width */
+        top: 2%;
+        left: 80%;
+    }
+
+    .navigation ul li p {
+        font-size: 2.5vw; /* Adjust font size based on viewport width */
+        left: 30%;
+        top: 6%;
+        font-size: 14px;
+        font-weight: bolder;
+
+    }
+
+    #userprofile img {
+        width: 7vw; /* Adjust image size based on viewport width */
+        left: 120%;
+        top: 2%;
+    }
+
+    .main-page {
+        width: 140%;
+        height: 1200px;
+    }
+
+    .main-page li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+
+    #one {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+    }
+    #two{
+        position: absolute;
+        text-align: center;
+        top: 80%;
+        left: 15%;
+        width: 100%;
+    }
+    #three {
+        position: absolute;
+        text-align: center;
+        top: 130%;
+        left: 15%;
+        width: 100%;
+    }
+
+    .circle1 {
+        width: 70px;
+        height: 200px;
+        top: 200%;
+        
+       
+    }
+    .circle2 {
+        height: 200px;
+        left: -21%;
+        top: 260%;
+        border-top-right-radius: 160px 230px;
+            border-bottom-right-radius: 160px 230px;
+
+        
+       
+    }
+    .circle3{
+        width: 70px;
+        height: 200px;
+        
+       
+    }
+
+    .mens-fashion2 img, .womens-fashion2 img, .kids-fashion2 img {
+        width: 40%;
+        height: auto;
+        margin: auto;
+        display: block;
+        border-radius: 25px;
+    }
+    .mens-fashion2 img{
+        top: 205%;
+        left: 90%;
+    }
+    .mens-fashion #heading1{
+        position: absolute;
+        top: 200%;
+        font-size: 30px;
+        left: 12%;
+    }
+    .mens-fashion #heading2{
+        position: absolute;
+        top: 204%;
+        font-size: 28px;
+        left: 18%;
+    }
+    .mens-fashion #heading3{
+        position: absolute;
+        top: 210%;
+        font-size: 14px;
+        left: 12%;
+        width: 240px;
+    }
+    .womens-fashion img{
+        top: 260%;
+        left: 90%;
+    }
+    .womens-fashion #heading4{
+        position: absolute;
+        top: 260%;
+        font-size: 30px;
+        left: 12%;
+    }
+    .womens-fashion #heading5{
+        position: absolute;
+        top: 264%;
+        font-size: 28px;
+        left: 18%;
+        width: 240%;
+    }
+    .womens-fashion #heading6{
+        position: absolute;
+        top: 270%;
+        font-size: 14px;
+        left: 12%;
+        width: 240px;
+    }
+    .kids-fashion2 img{
+        width: 40%;
+        top: 324%;
+        left: 90%
+    }
+
+    .kids-fashion #heading7{
+        position: absolute;
+        top: 320%;
+        font-size: 30px;
+        left: 12%;
+    }
+    .kids-fashion #heading8{
+        position: absolute;
+        top: 324%;
+        font-size: 28px;
+        left: 18%;
+        width: 240%;
+    }
+    .kids-fashion #heading9{
+        position: absolute;
+        top: 330%;
+        font-size: 14px;
+        left: 12%;
+        width: 240px;
+    }
+    
+    .community {
+            width: 100%;
+            text-align: center;
+            top: 370%;
+            left: 20%;
+        }
+
+        .community p {
+            font-size: 15px;
+            color: rgb(107, 105, 105);
+        }
+        .bx{
+            font-size: 50px;
+            margin-right: -10px;
+        }
+
+        .social {
+            top: 385%;
+            width: 300px;
+        }
+}
+
+
+    </style>
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <ul>
+            <li id="sakh"><a href="#"><img src="sakh.jpeg" alt=""></a></li>
+            <li>
+                <p>SaKhStyle</p>
+            </li>
+            <li><a href="#" id="loginLink">Login</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#"><img src="search-interface-symbol.png" alt=""></a></li>
+            <li><input type="text" name="search" placeholder="search"></li>
+            <li id="userprofile">
+                <a href="#"><img src="user.png" alt=""></a>
+                <span id="userProfileName"></span>
+            </li>
+
+        </ul>
+    </div>
+    <div class="main-page">
+        <li id="one"><a href="ecommerce-module2.html"><img src="women-main.webp" alt=""></a></li>
+        <li id="two"><a href="#"><img src="kids-main.webp" alt=""></a> </li>
+        <li id="three"><a href="#"><img src="imgmen.avif" alt=""></a> </li>
+    </div>
+    <div class="circle1"></div>
+    <div class="mens-fashion">
+        <p id="heading1">Men's</p>
+        <p id="heading2">Fashion</p>
+        <p id="heading3">Discover the latest trends in men's fashion at SaKh. From stylish suits to casual wear, our
+            collection ensures you look sharp and feel confident for every occasion. Shop now!</p>
+        <p class="mens-fashion2"><a href="#"><img src="mens2.webp" alt=""></a></p>
+    </div>
+    <div class="circle2"></div>
+    <div class="womens-fashion">
+        <p id="heading4">Women</p>
+        <p id="heading5">Fashion</p>
+        <p id="heading6">Explore the latest trends in women's fashion at SaKh. From elegant dresses to chic accessories,
+            our collection offers everything you need to elevate your style. Shop now for the perfect look!</p>
+        <p class="womens-fashion2"><a href="ecommerce-module2.html"><img src="women4.webp" alt=""></a></p>
+    </div>
+    <div class="circle3"></div>
+    <div class="kids-fashion">
+        <p id="heading7">Kids</p>
+        <p id="heading8">Fashion</p>
+        <p id="heading9">Discover adorable styles for your little ones at SaKh. From playful outfits to comfy
+            essentials, our kids' fashion collection has everything to keep them stylish and comfortable. Shop now and
+            make them shine!</p>
+        <p class="kids-fashion2"><a href="#"><img src="kids4.webp" alt=""></a></p>
+    </div>
+
+    <div class="community">
+        <p>Follow us on social media to stay updated on the latest arrivals, exclusive offers, and
+            style inspiration. Join the SaKhStyle community and share your unique fashion journey with us.</p>
+    </div>
+
+
+    <div class="social">
+        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-pinterest-alt'></i></a>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h2>Login or Signup</h2>
+            </div>
+            <div class="modal-body">
+                <div class="login-form">
+                    <h3>Login</h3>
+                    <input type="text" class="form-control" placeholder="Username">
+                    <input type="password" class="form-control" placeholder="Password">
+                    <button class="btn">Login</button>
+                </div>
+                <div class="signup-form" style="display: none;">
+                    <h3>Signup</h3>
+                    <input type="text" class="form-control" placeholder="Username">
+                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="password" class="form-control" placeholder="Password">
+                    <button class="btn1">Signup</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" id="toggleForm">Switch to Signup</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var loginLink = document.getElementById("loginLink");
+        var userprofile = document.getElementById("userprofile");
+        loginLink.onclick = function () {
+            modal.style.display = "block";
+            loginForm.style.display = "block";
+            signupForm.style.display = "none";
+        }
+
+        userprofile.onclick = function () {
+            modal.style.display = "block";
+            loginForm.style.display = "block";
+            signupForm.style.display = "none";
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        var toggleFormBtn = document.getElementById("toggleForm");
+
+        var loginForm = document.querySelector(".login-form");
+        var signupForm = document.querySelector(".signup-form");
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+        toggleFormBtn.onclick = function () {
+            if (loginForm.style.display === "block") {
+                loginForm.style.display = "none";
+                signupForm.style.display = "block";
+                toggleFormBtn.textContent = "Switch to Login";
+            } else {
+                loginForm.style.display = "block";
+                signupForm.style.display = "none";
+                toggleFormBtn.textContent = "Switch to Signup";
+            }
+        }
+
+
+        document.querySelector(".login-form .btn").addEventListener("click", function () {
+            var usernameRegex = /^[a-zA-Z0-9]{4,}$/;
+            var passwordRegex = /^[a-zA-Z0-9!@#$%^&*()_+]{6,}$/;
+            var usernameInput = document.querySelector(".login-form input[type='text']");
+            var passwordInput = document.querySelector(".login-form input[type='password']");
+            var username = usernameInput.value;
+            var password = passwordInput.value;
+
+            if (!usernameRegex.test(username)) {
+                alert("Username should contain at least 4 characters and contain only letters and numbers.");
+                return;
+            }
+
+            if (!passwordRegex.test(password)) {
+                alert("Password should contain at least 6 characters and can contain letters, numbers, and special characters.");
+                return;
+            }
+
+
+            var userProfileName = document.getElementById("userProfileName");
+            userProfileName.textContent = username + "!";
+
+            alert("Login successful!");
+            document.getElementById("myModal").style.display = "none";
+        });
+
+        document.querySelector(".signup-form .btn1").addEventListener("click", function () {
+            var usernameRegex = /^[a-zA-Z0-9]{4,}$/;
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var passwordRegex = /^[a-zA-Z0-9!@#$%^&*()_+]{6,}$/;
+
+            var usernameInput = document.querySelector(".signup-form input[type='text']");
+            var emailInput = document.querySelector(".signup-form input[type='email']");
+            var passwordInput = document.querySelector(".signup-form input[type='password']");
+
+            var username = usernameInput.value;
+            var email = emailInput.value;
+            var password = passwordInput.value;
+
+            if (!usernameRegex.test(username)) {
+                alert("Username should contain at least 4 characters and contain only letters and numbers.");
+                return;
+            }
+
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            if (!passwordRegex.test(password)) {
+                alert("Password should contain at least 6 characters and can contain letters, numbers, and special characters.");
+            }
+
+            // Display username below user profile
+            var userProfileName = document.getElementById("userProfileName");
+            userProfileName.textContent = "Welcome, " + username + "!";
+
+            alert("Signup successful!");
+            document.getElementById("myModal").style.display = "none";
+        });
+
+
+    </script>
+
+</body>
+
+</html>

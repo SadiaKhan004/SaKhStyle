@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+        .body {
+            margin: 0;
+            padding: 0;
+            border: none;
+            background-color: #FCF4FC;
+        }
+
+        .header {
+            width: 1280px;
+            background-color: #CDEEE6;
+            height: 100px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+        .header ul {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .header ul li {
+            list-style: none;
+            display: inline-block;
+            padding-left: 65px;
+            padding-right: 10px;
+            padding-top: 25px;
+        }
+
+        .header ul li p {
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 45px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .header ul li p {
+            position: absolute;
+            top: -3%;
+            left: 42%;
+        }
+
+        #userprofile img {
+            position: absolute;
+            left: 90%;
+            top: 3.5%;
+            width: 45px;
+
+        }
+
+        #sakh img {
+            position: absolute;
+            left: 37%;
+            top: 5%;
+            width: 45px;
+
+
+        }
+
+        #more img {
+            position: absolute;
+            left: 4%;
+            top: 3.5%;
+            width: 45px;
+        }
+
+        #trolly img {
+            width: 45px;
+            position: absolute;
+            top: 3.5%;
+            left: 80%;
+        }
+
+        .show {
+            position: absolute;
+            top: 20%;
+            left: 11%;
+        }
+
+        .show a img {
+            width: 230px;
+            height: 310px;
+            border-radius: 12px;
+
+
+        }
+
+        .show a:active img {
+            box-shadow: inset 8px 8px 12px 0px #CDEEE6,
+                inset -8px -8px 12px 0px #CDEEE6;
+            transform: scale(.9);
+            box-shadow: 15px 15px 15px #CDEEE6;
+            transition: all 0.5s ease;
+
+        }
+
+        .options {
+            position: absolute;
+            top: 78%;
+            left: 11%;
+        }
+
+        .options img {
+            width: 80px;
+            height: 100px;
+            border-radius: 12px;
+            margin-left: 1px;
+            margin-right: 15px;
+        }
+
+        .line {
+
+            position: absolute;
+            top: 55%;
+            left: 20%;
+            color: #CDEEE6;
+            width: 368px;
+            height: 0px;
+
+            border: 4px solid #CDEEE6;
+            transform: rotate(90.08deg);
+
+
+        }
+
+        .description {
+            position: absolute;
+            top: 25%;
+            left: 38%;
+            display: inline-block;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+            line-height: 30px;
+        }
+
+        .colors {
+            margin-top: -5px;
+            /* Adjust as needed */
+        }
+
+        .colors p {
+            width: 500px;
+        }
+
+        span {
+            color: rgb(87, 85, 85);
+        }
+
+        .color1,
+        .color2,
+        .color3 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: solid black 1px;
+            margin-right: 5px;
+            display: inline-block;
+        }
+
+        .color1 {
+            background-color: #8A9A5B;
+        }
+
+        .color2 {
+            background-color: pink;
+        }
+
+        .color3 {
+            background-color: yellow;
+        }
+
+        .customerReview1 {
+            display: flex;
+            align-items: flex-start;
+            width: 45%;
+            position: absolute;
+            top: 120%;
+            left: 5%;
+            /* Adjust width as needed */
+        }
+
+        .customerReview1 img {
+            width: 45px;
+            margin-right: 15px;
+        }
+        .customerReview1 p{
+            margin-top: -5px;
+            text-align: justify;
+        }
+        .customerReview2 {
+            display: flex;
+            align-items: flex-start;
+            width: 45%;
+            position: absolute;
+            left: 5%;
+            top: 135%;
+            /* Adjust width as needed */
+
+        }
+
+        .customerReview2 img, .customerReview1img {
+            width: 45px;
+            margin-right: 15px;
+        }
+        .customerReview2 p{
+            margin-top: 5px;
+            text-align: justify;
+            
+        }
+        .stars {
+            display: flex;
+            margin-bottom: 5px;
+            position: absolute;
+            left: 150%;
+            top: -7%;
+        }
+
+        .stars .star {
+            font-size:30px;
+            color: gold;
+            margin-right: 2px;
+        }
+        .circle1 {
+            position: absolute;
+            left: 1%;
+            top: 100%;
+            width: 50px;
+            height: 100px;
+            background-color: #CDEEE6;
+            transform: rotate(360deg);
+            border-top-right-radius: 160px 139px;
+            border-bottom-right-radius: 160px 139px;
+        }
+        .heading1{
+            position: absolute;
+            left: 3.5%;
+            top: 100%;
+            font-size: 32px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 0.04em;
+        }
+        .circle2 {
+            position: absolute;
+            left: 1%;
+            top: 150%;
+            width: 50px;
+            height: 100px;
+            background-color: #CDEEE6;
+            transform: rotate(360deg);
+            border-top-right-radius: 160px 139px;
+            border-bottom-right-radius: 160px 139px;
+        }
+        .heading2{
+            position: absolute;
+            left: 3.5%;
+            top: 150%;
+            font-size: 32px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 0.04em;
+        }
+        .like .set1{
+            position: absolute;
+            top: 170%;
+            left: 10%;
+        }
+        .set1 img {
+            display: inline-block;
+            padding: 10px;
+            border-radius: 15px;
+            width: 220px;
+            height: 320px;
+            margin-left: -50px;
+            margin-right: 100px;
+            margin-bottom: 50px;
+        }
+        .arrow img{
+            position: absolute;
+            top: 35%;
+            width: 50px;
+            height: 50px;
+        }
+        .footer1{
+            position: absolute;
+            top: 240%;
+            width: 1280px;
+            height: 500px;
+            margin-left: 0;
+            border: 0;
+            background-color: #CDEEE6;
+            border-radius: 10px;
+        }
+        .footer {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            display: inline-flex;
+            margin: 10px;
+            line-height: 30px;
+        }
+        .Service {
+            margin-right: 80px; 
+        }
+        .Contact{
+            margin-right: 80px;
+        }
+        .Service p{
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+        }
+        .Service a{
+            text-decoration: none;
+            font-size: 16px;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        .Contact p{
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+        }
+        .Contact a{
+            text-decoration: none;
+            font-size: 16px;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        .Help p{
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+        }
+        .Help a{
+            text-decoration: none;
+            font-size: 16px;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        .Email{
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            display: inline-flex;
+        }
+        .Email label input{
+            width: 300px;
+            height: 40px;
+            border-radius: 5px solid white;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        .send{
+            background-color: #CDEEE6;
+            padding-top: 7px;
+            padding-left: 5px;
+            width: 40px;
+            height: 40px;
+            border-radius: 5px solid white;
+        }
+
+        .send img{
+            width: 35px;
+
+        }
+        .social {
+            position: absolute;
+            top: 25%;
+            left: 7%;
+        }
+
+        .bx {
+            font-family: 'Boxicons';
+            font-weight: normal;
+            font-style: normal;
+            display: block;
+            font-size: 60px;
+            color: black;
+            width: 90px;
+        }
+        .social a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <li id="more"><a href="#"><img src="more.png" alt=""></a></li>
+            <li id="sakh"><a href="#"><img src="sakh.jpeg" alt=""></a></li>
+            <li>
+                <p>SaKhStyle</p>
+            </li>
+            <li id="trolly"><a href="#"><img src="trolley.png" alt=""></a></li>
+            <li id="userprofile"><a href="#"><img src="user.png" alt=""></a></li>
+        </ul>
+    </div>
+
+    <div id="mainImage" class="show">
+        <!-- JavaScript will update the src attribute of this image -->
+        <a href=""><img src=""></a>
+    </div>
+    <div class="options" id="mainImage">
+        <a href="#"><img src="" alt=""></a>
+        <a href="#"><img src="" alt=""></a>
+
+    </div>
+    <div class="line"></div>
+    <div class="description">
+        <p>Sage Green Silk Embroidered Palazzo Suit</p>
+        <p>PKR: 7,999.00</p>
+        <p>Shirt: 2.5 meters Plazzo: 2.5 meters Duppatta: 2.25 meters</p>
+        <p>Design: Zari Flower</p>
+        <div class="colors">
+            <div>
+                <p>Colors</p>
+            </div>
+            <a href="#">
+                <div class="color1"></div>
+            </a>
+            <a href="#">
+                <div class="color2"></div>
+            </a>
+            <a href="#">
+                <div class="color3"></div>
+            </a>
+            <p> Disclaimer: <span> Please note that the colors of the Sage Green Silk Embroidered Palazzo Suit may vary
+                    slightly due to
+                    photographic lighting sources or your monitor settings.</span></p>
+        </div>
+
+    </div>
+    <div class="customerReviews">
+        <div class="customerReview1">
+            <a href="#"><img src="user.png" alt=""></a>
+            <p>I recently purchased the Sage Green Silk Embroidered Palazzo Suit and I couldn't be happier. The quality
+                of the silk and the detailed embroidery are outstanding. It fits perfectly and feels very comfortable.
+            </p>
+            <div class="stars">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+        <div class="customerReview2">
+            <a href="#"><img src="user.png" alt=""></a>
+            <p>I bought the Sage Green Silk Embroidered Palazzo Suit for a friend's wedding and it looked stunning! The
+                material is soft and luxurious.</p>
+                <div class="stars">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+        </div>
+    </div>
+    <div class="circle1"></div>
+    <div class="heading1"><p>Customer Reviews</p></div>
+    <div class="circle2"></div>
+    <div class="heading2"><p>You may also like</p></div>
+    <div class="like">
+        <div class="set1">
+            <a href="#"> <img src="wimg1.webp" alt=""></a>
+            <a href="#"><img src="wimg2.webp" alt=""></a>
+            <a href="#"><img src="wimg3.webp" alt=""></a>
+            <a href="#" class="arrow"><img src="right-arrow.png" alt=""> </a>
+        </div>
+    </div>
+    <div class="footer1">
+        <div class="footerdetail">
+            <div class="Email">
+                <label for="input"><input type="text" name="email" placeholder="email"></label>
+                <div class="send"><a href="#"><img src="right-arrow.png" alt=""></a></div>
+            </div>
+            <div class="footer">
+                <div class="Service">
+                    <p>Services</p>
+                    <a href="#">Products</a> <br>
+                    <a href="#">Customer Service</a> <br>
+                    <a href="#">Payement Services</a>
+                </div>
+                <div class="Contact">
+                    <p>Contact</p>
+                    <a href="#">+92 3025 855736</a> <br>
+                    <a href="#">+12 3025 855736</a> <br>
+                    <a href="#">+92 3025 8556736</a>
+                </div>
+                <div class="Help">
+                    <p>Contact</p>
+                    <a href="#">Return Policy</a> <br>
+                    <a href="#">Shipement Details</a> <br>
+                    <a href="#">FAQ's</a>
+                </div>
+
+        </div>
+    
+        </div>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-pinterest-alt'></i></a>
+        </div>
+
+    </div>
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        const imageURL = getQueryParam('image');
+        console.log('Image URL:', imageURL);
+        const mainImage = document.querySelector('.show img');
+        mainImage.src = imageURL;
+        console.log('Main Image src:', mainImage.src);
+        const optionsImages = document.querySelectorAll('.options img');
+        optionsImages.forEach(image => {
+            image.src = imageURL;
+        });
+    
+        optionsImages.forEach((image, index) => {
+            console.log(`Option Image ${index + 1} src:`, image.src);
+        });
+    </script>
+    
+    
+    
+    
+
+</body>
+
+</html>
